@@ -40,6 +40,9 @@ public class TipCalculator {
         perPersonTip = justTip / people;
         perPersonTip =(int) (perPersonTip *100) ;
         perPersonTip /=100;
+        perPerson = total / people;
+        perPerson=(int) (perPerson * 100) ;
+        perPerson /=100;
 
         System.out.println("--------------------------------------------------");
         System.out.println("Total bill before tip: $" + total);
