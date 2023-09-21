@@ -1,9 +1,8 @@
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.*;
 public class TipCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         double total = 0;
         double withTip;
         int people;
@@ -14,6 +13,7 @@ public class TipCalculator {
         double percent;
         double justTip;
         double price;
+
         System.out.println("Welcome to the tip calculator!");
         System.out.print("How many people are in your party? ");
         people = scan.nextInt();
@@ -33,8 +33,10 @@ public class TipCalculator {
         }
         justTip = total * tip;
         withTip = justTip + total;
+        perPersonTip = justTip / people;
+        perPersonTip*=100
 
-
+        System.out.println("--------------------------------------------------");
         System.out.println("Total bill before tip: $" + total);
         System.out.println("Total percentage: " + percent + "%");
         System.out.println("Total tip: $" + justTip);
