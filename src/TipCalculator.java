@@ -49,7 +49,7 @@ public class TipCalculator {
         perPersonWithTip =(int) (perPersonWithTip * 100) ;
         perPersonWithTip /=100;
 
-
+// prints everything out
         System.out.println("--------------------------------------------------");
         System.out.println("Total bill before tip: $" + ((total*100)/100));
         System.out.println("Total percentage: " + percent + "%");
@@ -59,6 +59,7 @@ public class TipCalculator {
         System.out.println("Tip per person: $"+ perPersonTip);
         System.out.println("Total cost per person: $" + perPersonWithTip);
         System.out.println("--------------------------------------------------");
+
         //freestyle
         System.out.println();
         rounded = (int) (perPersonWithTip + .5);
